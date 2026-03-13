@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/icon-512.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>MaatruCare — AI-Powered Maternity Support</title>
+    <meta name="description" content="MaatruCare is your AI-powered pregnancy companion, providing personalized guidance for diet, lifestyle, symptoms, and emotional well-being throughout your journey." />
+
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#ff758f" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Apple PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="MaatruCare" />
+    <link rel="apple-touch-icon" href="/icon-512.png" />
+
+    <!-- Splash screen color -->
+    <style>
+      html { background-color: #fce4ec; }
+    </style>
+    <script type="module" crossorigin src="/assets/index-DQj2BohK.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Cg_inDBi.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Register Service Worker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('SW registered:', reg.scope))
+            .catch(err => console.log('SW registration failed:', err));
+        });
+      }
+    </script>
+  </body>
+</html>

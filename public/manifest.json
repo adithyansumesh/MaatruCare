@@ -1,0 +1,22 @@
+{
+  "name": "MaatruCare",
+  "short_name": "MaatruCare",
+  "description": "AI-powered pregnancy companion for personalized guidance, health tracking, and emotional support",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fce4ec",
+  "theme_color": "#ff758f",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "lifestyle", "medical"],
+  "lang": "en",
+  "dir": "ltr"
+}
